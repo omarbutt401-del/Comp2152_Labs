@@ -1,34 +1,25 @@
 # Solution for the week 02 lab
+import random
 choices = ["Rock", "Paper", "Scissors"]
+print(choices)
 
-player = input("Enter your choice (1=Rock, 2=Paper, 3=Scissors): ")
-playerChoice = int(player)
+playerChoice = input("Enter a number between 1 - 3 for the following choices -> 1 = Rock, 2 = Paper, 3 = Scissors : ")
+
+playerChoice = int(playerChoice)
 
 if playerChoice < 1 or playerChoice > 3:
-    print("Error: Choice must be between 1 and 3.")
-else:
-    computer = input("Enter computer's choice (1-3): ")
-    computer = int(computer)
-    
-    if computer < 1 or computer > 3:
-        print("Error: Choice must be between 1 and 3.")
-    else:
-        playerName = choices[playerChoice -1]
-        computerName = choices[computer -1]
-        
-        print(f"You chose: {playerName}")
-        print(f"Computer chose: {computerName}")
+    print("Error! Choice should be between 1 and 3.")
+else: 
+    # Develop the game logic using if/else/elif statements
+    computerChoice = random.randint(1, 3)
 
-        if playerChoice == computer:
-            print("It's a tie!")
-        elif player == 1 and computer == 3:
-            print("Rock beats Scissors - You win!")
-        elif player == 2 and computer == 1:
-            print("Paper beats Rock - You win!")
-        elif playerChoice == 3 and computer == 2:
-            print("Scissors beats Paper - You win!")
-        else:
-            print("You lose!")
-        
-        if playerName != "Rock":
-            print("You didn't pick the classic Rock...")
+    if playerChoice == computerChoice:
+        print("It's a tie!")
+    elif playerChoice == 1 and computerChoice == 3:
+        print("You win! Rock beats Scissors.")
+    elif playerChoice == 2 and computerChoice == 1:
+        print("You win! Paper beats Rock.")
+    elif playerChoice == 3 and computerChoice == 2:
+        print("You win! Scissors beats Paper.")
+    else:
+        print("You lose!")
