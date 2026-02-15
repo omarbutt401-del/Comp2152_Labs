@@ -8,6 +8,7 @@ def fib(n):
     return fib(n - 1) + fib(n - 2)
 
 
+
 # Test Fibonacci (0 to 10)
 for i in range(11):
     print(fib(i))
