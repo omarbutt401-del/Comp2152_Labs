@@ -96,7 +96,7 @@ print("All numbers:", contacts.values())
 print("Total contacts:", len(contacts))
 
 # Q 6
-inventory = {
+`inventory = {
     "Laptop": (999.99, 5),
     "Mouse": (29.99, 15),
     "Keyboard": (79.99, 10),
