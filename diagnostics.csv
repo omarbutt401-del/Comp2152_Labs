@@ -1,0 +1,6 @@
+2026-02-22 20:54:06,arp,local,7 devices,Captured
+2026-02-22 20:54:12,nslookup,f,Not found,Failed
+2026-02-22 20:55:43,ping,rr,N/A,Failed
+2026-02-22 20:55:47,nslookup,f,Not found,Failed
+2026-02-22 20:55:48,ifconfig,en0,ee:84:fa:ae:93:2e / 192.168.2.14,Captured
+2026-02-22 20:55:55,arp,local,7 devices,Captured
